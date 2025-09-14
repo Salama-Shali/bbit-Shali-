@@ -20,6 +20,6 @@ $conf['db_name'] = "bbit-Shali-";
 $conf['mail_type'] = "smpt"; //options: smtp, sendmail, email
 $conf['smtp_host'] = "smtp.gmail.com";  
 $conf['smtp_user'] = "roselyne.mwalagho@strathmore.edu"; 
-$conf['smtp_pass'] = "acbu ykbt koaf ssiw"; 
+$conf['smtp_pass'] = ""; 
 $conf['smtp_port'] = 465;
 $conf['smtp_secure'] = "ssl"; //options: ssl, tls
