@@ -1,10 +1,7 @@
-
 <?php
-
-//include the class file
-require 'ClassAutoLoad.php';
-
-//call the methods
-$layouts->heading($conf);
-$forms->signup();
-$layouts->footer($conf);
+require 'ClassAutoload.php';
+$ObjLayouts->header($conf);
+$ObjLayouts->navbar($conf);
+$ObjLayouts->banner($conf);
+$ObjLayouts->form_content($conf, $ObjForms);
+$ObjLayouts->footer($conf);
