@@ -28,7 +28,7 @@ Class layouts{
                <a class="navbar-brand" href="#">Expand at lg</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
                <div class="collapse navbar-collapse" id="navbarsExample05">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                     <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+                     <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./">Home</a> </li>
                      <li class="nav-item"> <a class="nav-link" href="signup.php">Sign Up</a> </li>
                      <li class="nav-item"> <a class="nav-link" href="signin.php">Sign in</a> </li>
                         </ul>
@@ -52,6 +52,31 @@ Class layouts{
             </div>
             <?php
        }     
+
+public function content($conf) {
+?>
+
+            <div class="row align-items-md-stretch">
+               <div class="col-md-6">
+                  <div class="h-100 p-5 text-bg-dark rounded-3">
+                     <h2>Change the background</h2>
+                     <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>    
+                     <button class="btn btn-outline-light" type="button">Example button</button> 
+                  </div>
+               </div>
+                            <div class="col-md-6">
+                  <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                     <h2>Add borders</h2>
+                     <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+                     <button class="btn btn-outline-secondary" type="button">Example button</button> 
+            </div>
+</div>
+</div>
+            <?php
+    }
+
+
+
        public function form_content($conf, $ObjForms) {
        ?>
         
