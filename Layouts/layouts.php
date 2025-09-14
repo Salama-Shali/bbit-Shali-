@@ -1,5 +1,6 @@
 
 <?php
+
 Class layouts{
     public function heading(){
         echo "<h1>Welcome to {$conf['site_name']} </h1>";

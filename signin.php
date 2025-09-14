@@ -1,5 +1,6 @@
 
 <?php
+
 //include the class file
 require 'ClassAutoLoad.php';
 
