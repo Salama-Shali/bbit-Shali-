@@ -2,7 +2,7 @@
 <?php
 
 Class layouts{
-    public function heading(){
+    public function heading($conf){
         echo "<h1>Welcome to {$conf['site_name']} </h1>";
     }
     public function footer($conf) {
