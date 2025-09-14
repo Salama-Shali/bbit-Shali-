@@ -3,7 +3,7 @@
 // site information
 
 $conf['site_name'] = "BBIT Tutorials";
-$conf['site_url'] = "http://localhost/Bbit-Shali-";
+$conf['site_url'] = "http://localhost/bbit-Shali-";
 $conf['site_email'] = "admin@bbittuts.com";
 
 //site language
