@@ -4,6 +4,6 @@
 require 'ClassAutoLoad.php';
 
 //call the methods
-$layouts->heading($conf);
-$forms->signup();
+$layouts>heading($conf);
+$forms->login();
 $layouts->footer($conf);
