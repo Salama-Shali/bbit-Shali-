@@ -14,4 +14,12 @@ $conf['db_type'] = "pdo";
 $conf['db_host'] = "localhost";
 $conf['db_user'] = "root";
 $conf['db_pass'] = "";
-$conf['db_name'] = "Bbit-Shali-";
+$conf['db_name'] = "bbit-Shali-";
+
+//Email configurations
+$conf['mail_type'] = "smpt"; //options: smtp, sendmail, email
+$conf['smtp_host'] = "smtp.gmail.com";  
+$conf['smtp_user'] = "roselyne.mwalagho@strathmore.edu"; 
+$conf['smtp_pass'] = "acbu ykbt koaf ssiw"; 
+$conf['smtp_port'] = 465;
+$conf['smtp_secure'] = "ssl"; //options: ssl, tls
