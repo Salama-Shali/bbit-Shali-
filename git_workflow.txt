@@ -1,0 +1,4 @@
+git status
+git add .
+git commit -m "git and github exercise"
+git push origin main
