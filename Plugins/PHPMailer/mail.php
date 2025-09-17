@@ -8,6 +8,18 @@ use PHPMailer\PHPMailer\Exception;
 //Load Composer's autoloader (created by composer, not included with PHPMailer)
 require 'vendor/autoload.php';
 
+
+$name  = $_POST['name'] ?? 'User';
+$email = $_POST['email'] ?? '';
+
+$name = filter_var($name, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo "This email is not valid.";
+    exit; 
+}
+
+
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
@@ -25,7 +37,7 @@ try {
 
     //Recipients
     $mail->setFrom('roselyne.mwalagho@strathmore.edu', 'Shali');
-    $mail->addAddress('salamaroselyne@gmail.com', 'Salama');     //Add a recipient
+    $mail->addAddress($email, $name);     //Add a recipient
 
     
     // $mail->addAddress('ellen@example.com');               //Name is optional
@@ -40,7 +52,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Welcome to our BBIT TUTORIALS';
-    $mail->Body    = 'This is a new semester <b>Lets enjoy coding and have fun!! </b>';
+    $mail->Body = "Hello {$name}, <br><br>This is a new semester <b>Lets enjoy coding and have fun!! </b>";
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
