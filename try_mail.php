@@ -10,4 +10,8 @@ $mailCnt = [
     'body' => 'This is a new year <b>Lets enjoy coding and have fun </b>'
 ];
 
-$ObjSendMail->Send_Mail($conf, $mailCnt);
+// $ObjSendMail->Send_Mail($conf, $mailCnt);
+
+
+print basename($_SERVER['PHP_SELF']);
+

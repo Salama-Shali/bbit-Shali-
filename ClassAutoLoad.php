@@ -3,7 +3,9 @@
 //Load Composer's autoloader (created by composer, not included with PHPMailer)
 require 'Plugins/PHPMailer/vendor/autoload.php';
 require 'conf.php';
-$directory = ["Forms", "Globals", "Layouts"];
+
+//autoload classes from specified directories
+$directory = ["Forms", "Globals", "Layouts, proc"];
 
 spl_autoload_register(function ($class_name) use ($directory) {
     foreach ($directory as $dir) {
@@ -20,3 +22,7 @@ spl_autoload_register(function ($class_name) use ($directory) {
 $ObjSendMail = new SendMail();
 $ObjLayouts = new layouts($conf);
 $ObjForms = new forms();
+$ObjAuth = new auth();
+$ObjFncs = new fncs();
+
+$ObjAuth->signup($conf,$ObjFncs,$ObjSendMail);

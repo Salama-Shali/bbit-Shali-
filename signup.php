@@ -4,5 +4,5 @@ require 'ClassAutoload.php';
 $ObjLayouts->header($conf);
 $ObjLayouts->navbar($conf);
 $ObjLayouts->banner($conf);
-$ObjLayouts->form_content($conf, $ObjForms);
+$ObjLayouts->form_content($conf, $ObjForms, $ObjFncs);
 $ObjLayouts->footer($conf);
